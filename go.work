@@ -16,5 +16,9 @@ replace (
 	trpc.group/trpc-go/trpc-agent-go/storage/postgres => ../storage/postgres
 	trpc.group/trpc-go/trpc-agent-go/storage/mysql => ../storage/mysql
 	trpc.group/trpc-go/trpc-agent-go/evaluation => ../evaluation
+	trpc.group/trpc-go/trpc-agent-go/model/anthropic => ../model/anthropic
+	trpc.group/trpc-go/trpc-agent-go/model/gemini => ../model/gemini
+	trpc.group/trpc-go/trpc-agent-go/model/ollama => ../model/ollama
+	trpc.group/trpc-go/trpc-agent-go/model/provider => ../model/provider
 	trpc.group/trpc-go/trpc-agent-go/knowledge/vectorstore/pgvector => ../knowledge/vectorstore/pgvector
 )
