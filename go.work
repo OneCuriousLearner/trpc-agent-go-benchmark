@@ -1,0 +1,20 @@
+go 1.25.5
+
+use (
+	./memory/trpc-agent-go-impl
+	./summary/trpc-agent-go-impl
+	./knowledge/knowledge_system/trpc_agent_go/trpc_knowledge
+)
+
+replace (
+	trpc.group/trpc-go/trpc-agent-go => ../
+	trpc.group/trpc-go/trpc-agent-go/memory/mysql => ../memory/mysql
+	trpc.group/trpc-go/trpc-agent-go/memory/pgvector => ../memory/pgvector
+	trpc.group/trpc-go/trpc-agent-go/memory/sqlite => ../memory/sqlite
+	trpc.group/trpc-go/trpc-agent-go/memory/sqlitevec => ../memory/sqlitevec
+	trpc.group/trpc-go/trpc-agent-go/session/pgvector => ../session/pgvector
+	trpc.group/trpc-go/trpc-agent-go/storage/postgres => ../storage/postgres
+	trpc.group/trpc-go/trpc-agent-go/storage/mysql => ../storage/mysql
+	trpc.group/trpc-go/trpc-agent-go/evaluation => ../evaluation
+	trpc.group/trpc-go/trpc-agent-go/knowledge/vectorstore/pgvector => ../knowledge/vectorstore/pgvector
+)
